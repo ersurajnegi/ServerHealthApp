@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../service/api.service';
 
 @Component({
   selector: 'app-server-list',
@@ -6,18 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server-list.component.css']
 })
 export class ServerListComponent implements OnInit {
-  public serverList : any = new Array();
+  public serverList: any = new Array();
 
-  constructor() { }
+  constructor(private _api: ApiService) { }
 
   ngOnInit() {
-    for(let i = 1; i< 11 ; i++){
+    for (let i = 1; i < 11; i++) {
       this.serverList.push({
-        serverName : `${i}: Server`,
+        serverName: `${i}: Server`,
         serverId: i,
-        filled : i * 10
+        filled: i * 10
       });
     }
+    this.getServerData();
+  }
+
+  getServerData(){
+    this._api.getServersData()
+    // .subscribe((data) => {
+    //   this.serverList = data;
+    // }, (error) => {
+
+    // });
   }
 
 }
