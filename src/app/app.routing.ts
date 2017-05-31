@@ -7,4 +7,4 @@ const appRoutes: Routes = [
     { path: '**', redirectTo: '/servers', pathMatch: 'full' }
 ];
 
-export const routes = RouterModule.forRoot(appRoutes);
+export const routes = RouterModule.forRoot(appRoutes,  { useHash: true });
