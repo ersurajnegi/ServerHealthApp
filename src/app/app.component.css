@@ -1,0 +1,14 @@
+.custom-nav{
+    background-color: #009cdc
+
+}
+.logo-img{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin: 10px 10px 0 16px;
+}
+nav .brand-logo{
+    margin-left: 20px;
+    font-size: 1.8rem;
+}

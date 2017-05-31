@@ -1,11 +1,15 @@
+
 <div class="navbar-fixed">
-  <nav>
+  <nav class="custom-nav">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center">Server Health App</a>
+       <img class="logo-img" src="../assets/cockpit-logo.svg">
+      <a href="#!" class="brand-logo center">Server Health App
+       
+      </a>
     </div>
   </nav>
 </div>
-
+<ng2-slim-loading-bar [color]="'#063852'" [height]="'4px'"></ng2-slim-loading-bar>
 <div class="container">
   <router-outlet></router-outlet>
   
