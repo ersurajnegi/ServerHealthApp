@@ -3,8 +3,8 @@ import { ServerListComponent } from './serverModule/components/server-list/serve
 
 
 const appRoutes: Routes = [
-    { path: "", redirectTo: '/servers', pathMatch: 'full' },
-    { path: '**', redirectTo: '/servers', pathMatch: 'full' }
+    { path: "", redirectTo: 'servers', pathMatch: 'full' },
+    { path: '**', redirectTo: 'servers', pathMatch: 'full' }
 ];
 
 export const routes = RouterModule.forRoot(appRoutes,  { useHash: true });
