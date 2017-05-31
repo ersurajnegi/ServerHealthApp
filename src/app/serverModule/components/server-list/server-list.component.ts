@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../service/api.service';
+import { ChartDirective } from '../../directives/chart.directive';
 
 @Component({
   selector: 'app-server-list',
@@ -22,7 +23,8 @@ export class ServerListComponent implements OnInit {
     this.getServerData();
   }
 
-  getServerData(){
+
+  getServerData() {
     this._api.getServersData()
     // .subscribe((data) => {
     //   this.serverList = data;

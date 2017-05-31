@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+/*.chatcontainer > div {
+   margin-bottom: -35% !important
+}
+.chatcontainer > div.highcharts-container > svg {
+   margin-bottom: -35%; max-height: 65% !important;
+}*/
