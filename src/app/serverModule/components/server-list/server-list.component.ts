@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../service/api.service';
-import { ChartDirective } from '../../directives/chart.directive';
+import { ChartDirective } from './../../../highChartModule/directives/chart.directive';
+
 
 @Component({
   selector: 'app-server-list',

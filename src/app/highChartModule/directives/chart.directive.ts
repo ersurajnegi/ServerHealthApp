@@ -1,5 +1,5 @@
 import { Directive, ElementRef , Input} from '@angular/core';
-declare let Highcharts: any, $: any;
+declare let Highcharts: any;
 @Directive({
   selector: '[appChart]'
 })
