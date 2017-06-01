@@ -1,6 +1,6 @@
 {
   "name": "server-health-app",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "author": "Suraj Negi",
   "scripts": {
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular-cli-ghpages": "^0.5.1",
     "angular-highcharts": "^3.1.0",
     "core-js": "^2.4.1",
     "highcharts": "^5.0.12",
